@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1>login to system</h1>
+    <input type="text" placeholder="enter username:" id="x">
+    <br>
+    <input type="text" placeholder="enter password" id="y">
+    <br>
+    <button onClick="func()">login</button>
+    <p id="z"></p>
+
+    <script>
+        function func() {
+            var x1 = document.getElementById('x').value;
+            var y1 = document.getElementById('y').value;
+            var z1 = "";
+
+            if (x1 == 'thebigc' && y1 == 'thebigc') {
+                z1 = 'you are logged in.';
+                document.getElementById('z').innerHTML = z1;
+            } else {
+                z1 = 'incorrect login information.';
+                document.getElementById('z').innerHTML = z1;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
