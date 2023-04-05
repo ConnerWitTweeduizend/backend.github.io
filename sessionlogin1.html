@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1>session login</h1>
+        <input type="text" id="user" placeholder="gebruikersnaam"><br>
+        <input type="text" id="pass" placeholder="wachtwoord"><br>
+        <button onClick="func()">login</button>
+
+    <script>
+
+        function func() {
+        const user = document.getElementById('user').value;
+        const pass = document.getElementById('pass').value;
+
+            if (user == "groteC" && pass == "groteC") {
+                window.location.href = "sessionlogin2.html";
+            } else {
+                window.location.href = "sessionlogin3.html";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
